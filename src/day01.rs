@@ -1,8 +1,8 @@
 use std::fs;
 
-fn main() {
+pub fn main() {
 
-    let contents = fs::read_to_string("./docs/01.txt")
+    let contents = fs::read_to_string("./input/01.txt")
         .expect("Something went wrong reading the file");
     
     'outer1: for x in contents.lines() {
